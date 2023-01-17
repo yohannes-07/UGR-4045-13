@@ -1,142 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Beta House </title>
-</head>
-<body>
-    <div class="container">
-        <header class="site-header">
-            
-            <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary menu">
-                <div class="logo" id="logo"> <a href="index.html"> <img src="images/logo.jpg" alt="beta house logo" width="70px" height="70px"> </a></div>
-                <ul>
-                    <li class="home"><a href="index.html" >HOME</a></li>
-                    <li class="buy"><a href="buy.html">BUY</a></li>
-                    <li class="rent"><a href="rent.html">RENT</a></li>
-                    <li class="agents"><a href="agents.html">AGENTS</a></li>
-                    <li class="about"><a href="about.html">ABOUT US</a></li>
-                    <li class="contact"><a href="contact.html">CONTACT</a></li>
-                    <li class="login"><a href="login.html">LOGIN/REGISTER</a></li>
-                </ul>
-            </nav>
-            <button aria-expanded="false"><i class="fa fa-bars"></i>.</button>
-            <button><i class="fa fa-close"></i>.</button>
-        </header>
-    <main>
-        <section class="section1">
-            <h1>G + 2</h1>
-            <h5>For sale</h5>
-            <div class="left-box grid-images">
-                <div class="images">
-                    <img src="images/luxurious.jpg" width="400" height="300" alt="images of the house">
-                    <img src="images/interior1.jpg" width="200" height="300" alt="image of the selected home">
-                    <img src="images/interior2.jpg" width="300" height="300" alt="image of interior design">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="buy.css">
+        <link rel="stylesheet" href="responsive1.css">
+        <title>Beta House </title>
+    </head>
+    <body onload="getID()">
+        
+            <header class="header" >
+                <div class="header__top">
+                    <div class="header-logo" >
+                        <a href="index.html"> <img src="images/beta.png" class="header-logo__img" alt="beta house logo" width="200" height="100"> </a>
+                    </div>
+                    <nav class="header__navbar" role="navigation" aria-label="Primary menu">
+                       
+                        <button class="btn btn--responsive">
+                            <img class="btn--close btn__img" src="images/close.png" alt="close button"></button>
+                        
+                        <ul class="navbar-list">
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="index.html" >HOME</a></li>
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="buy.html" >BUY</a></li>
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="rent.html">RENT</a></li>
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="agents.html">AGENTS</a></li>
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="about.html">ABOUT US</a></li>
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="contact.html">CONTACT</a></li>
+                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="login.html">LOGIN/REGISTER</a></li>
+                        </ul>
+                    </nav>
+                    <button class="btn  btn--responsive" aria-expanded="false">
+                        <img class="btn--bar"  src="images/hamburger.png" alt="hamburger button">
+                    </button>
                 </div>
-                <div class="videos">
-                    <video id="video" controls preload="metadata">
-                        <source src="videos/gibi.mp4" type="video/mp4" />
-                        <track
-                          label="English"
-                          kind="subtitles"
-                          srclang="en"
-                          src="videos/gibi.vtt"
-                          default />
-                    </video>
-                    <video id="video" controls preload="metadata">
-                        <source src="videos/modern.mp4" type="video/mp4" />
-                        <track
-                          label="English"
-                          kind="subtitles"
-                          srclang="en"
-                          src="videos/modern.vtt"
-                          default />
-                    </video>
+            </header>
+        <main>
+        <section class="details-section">
+            <h1 class="details-section__title">G + 2</h1>
+            <h5 class="details-section__description">For sale</h5>
+
+            <div class="details-container">
+                <div class="left-details">
+                    <div class="img-details">
+                        <img id="img1" class="img-details__img--large" src="images/luxurious.jpg"  alt="images of the house">
+                        <img id="img2" src="images/interior1.jpg" width="200" height="300" alt="image of the selected home">
+                        <img id="img3" src="images/interior2.jpg" width="300" height="300" alt="image of interior design">
+                    </div>
+                    <div class="video-details">
+                        <video class="video-details__video"  controls preload="metadata">
+                            <source id="video1" src="videos/modern.mp4" type="video/mp4" />
+                            <track
+                            label="English"
+                            kind="subtitles"
+                            srclang="en"
+                            src="videos/modern.vtt"
+                            default />
+                        </video>
+                        <video  class="video-details__video"  controls preload="metadata">
+                            <source id="video2" src="videos/apartment.mp4" type="video/mp4" />
+                            <track
+                            label="English"
+                            kind="subtitles"
+                            srclang="en"
+                            src="videos/apartment.vtt"
+                            default />
+                        </video>
+                    </div>
+                </div>
+                <div class="right-details" >
+                    <div class="property-list">
+                        <h1 class="property-list__title">Featured Properety List</h1>
+                        <ul class="property-list__list" >
+                            <li>Basement</li>
+                            <li>4 bedrooms</li>
+                            <li> 3 bathrooms</li>
+                        </ul>
+                    </div>
+                    <div class="contact-details">
+                        <h2 class="contact-details__text">Contact information</h2>
+                        <h3 class="contact-details__text">251920520751</h3>
+                        <form role="form" class="contact-form">
+                                <h1>Contact agent</h1>
+                                <label for="name">
+                                    <span class="visually-hidden">Name</span>
+                                </label>
+                                <input type="text" id="name" placeholder="Name" required>
+                                <label for="email">
+                                    <span class="visually-hidden">email</span>
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <label for="phone-number">
+                                    <span class="visually-hidden">Phone number</span>
+                                </label>
+                                <input type="text" id="phone-number" name="phone-number" placeholder="Phone number" required>
+                                <label for="message">
+                                    <span class="visually-hidden">Message</span>
+                                </label>
+                                <textarea name="message" type="text" id="message" placeholder="Message"></textarea>
+                                <label for="formSubmit">
+                                    <span class="visually-hidden">submit</span>
+                                </label>
+                                <input type="submit" value="Send"  id="formSubmit">
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="right-box " >
-                <div class="property-list">
-                    <h1>Featured Properety List</h1>
-                    <ul>
-                        <li>Basement</li>
-                        <li>4 bedrooms</li>
-                        <li> 3 bathrooms</li>
-                    </ul>
-                </div>
-                <div class="contact">
-                    <h2>Contact information</h2>
-                    <h3>25191*********</h3>
-                    <form role="form" class="contact-form">
-                            <h1>Contact agent</h1>
-                            <label for="name">
-                                <span class="visually-hidden">Name</span>
-                            </label>
-                            <input type="text" id="name" placeholder="Name">
-                            <label for="email">
-                                <span class="visually-hidden">email</span>
-                            </label>
-                            <input type="email" id="email" name="email" placeholder="Email">
-                            <label for="phone-number">
-                                <span class="visually-hidden">Phone number</span>
-                            </label>
-                            <input type="number" id="phone-number" name="phone-number" placeholder="Phone number">
-                            <label for="message">
-                                <span class="visually-hidden">Message</span>
-                            </label>
-                            <textarea name="message" type="text" id="message" placeholder="Message"></textarea>
-                            <label for="formSubmit">
-                                <span class="visually-hidden">submit</span>
-                            </label>
-                            <input type="submit" value="Submit"  id="formSubmit">
-                    </form>
-                </div>
-            </div>
-            <h1>Property description </h1>
-            <h2>Properety details list</h2>
-            <ul>
-                <li>Basement</li>
-                <li>4 bedrooms</li>
-                <li> 3 bathrooms</li>
-                <li> 2 Kitchens</li>
-                <li> 2 Salons</li>
+            <h1 class="details-section__title--bottom">Property description </h1>
+            <h2 class="details-section__subtitle" >Properety details list</h2>
+            <ul class="property-list__list" >
+                <li id="one">Basement</li>
+                <li id="two">4 bedrooms</li>
+                <li id="three"> 3 bathrooms</li>
+                <li id="four"> 2 Kitchens</li>
+                <li id="five"> 2 Salons</li>
             </ul>
             <div class="location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4804578880626!2d38.79856734945698!3d9.019859891585982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8502fec68fbb%3A0xda9c71ac6e10194d!2sGhion%20Property%20Management%2C%20Real%20Estate%20Brokerage%20agency%20%26%20Janitorial%20services%20plc!5e0!3m2!1sen!2set!4v1672059975768!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <img class="location__img" src="images/thumbnail.jpg" alt="location">
             </div>
+
         </section>
     </main>
-    <footer>
-        <nav role="navigation" aria-label="Secondary menu">
-            <ul>
-                <li class="about"> <a href="about.html">About us</a> </li>
-                <li class="agent"><a href="agents.html">Agents</a></li>
-                <li class="contact"><a href="contact.html">Contact us</a></li>
-                <li><div class="logo" id="logo"> <a href="index.html"> <img src="images/logo.jpg" alt="beta house logo" width="70px" height="70px"> </a></div></li>
-                <li class="buy"><a href="buy.html">Buy</a></li>
-                <li class="rent"><a href="rent.html">Rent</a></li>
-                <li class="feedback"><a href="contact.html">Feedback</a></li>
+
+    <footer class="footer">
+        <nav class="footer__navbar" role="navigation" aria-label="Secondary menu">
+            <ul class="navbar-list1">
+                <li class="navbar-list1__item"> <a class="navbar-list1__anchor" href="about.html">About us</a> </li>
+                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="agents.html">Agents</a></li>
+                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="contact.html">Contact us</a></li>
+                <li class="navbar-list1__item"> <div class="footer-logo" > <a class="navbar-list1__anchor" href="index.html"> <img  src="images/beta.png" class="footer-logo__img" alt="beta house logo" width="100" height="70"> </a></div></li>
+                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="buy.html">Buy</a></li>
+                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="rent.html">Rent</a></li>
+                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="contact.html">Feedback</a></li>
             </ul>
         </nav>
         <hr>
-        <div class="contact-info">
-            <h2>Head office</h2>
-            <h6>Bole Ruwanda Embassy</h6>
-            <h6>Addis Ababa</h6>
-            25191*******
-            25191*******
+        <div class="footer__address">
+            <div class="address">
+                <h1 class="address__title">Head office</h1>
+                <h2 class="address__title2">Bole Ruwanda Embassy <br> Addis Ababa</h2>
+                
+                <h3 class="address__contact">251920520751</h3>
+               <h3 class="address__contact"> 251920520751 </h3>
+            </div>
+            <div class="social-media">
+                <a class="social-media__anchor" href="https://www.facebook.com/betahouses1" aria-label="Follow comany on Facebook"><img class="social-media__icon" src="images/facebook.png" alt="facebook icon"></a>
+                <a class="social-media__anchor" href="https://twitter.com/betashouse_?lang=en" aria-label="Follow comany on Twitter"><img class="social-media__icon" src="images/twitter.png" alt="twitter icon"></a>
+                <a class="social-media__anchor" href="https://t.me/betahouses" aria-label="Follow comany on Whatsapp"><img class="social-media__icon" src="images/whatsapp.png" alt="whatsapp icon"></a>
+                <a class="social-media__anchor" href="https://t.me/betahouses"  aria-label="Follow comany on Telegram"><img class="social-media__icon" src="images/telegram.png" alt="telegram icon"></a>
+                <a class="social-media__anchor" href="https://t.me/betahouses" aria-label="Follow comany on Instagram"><img class="social-media__icon" src="images/instagram.png" alt="instagram icon"></a>
+             </div>
         </div>
-        <div class="social-media">
-            <a href="https://www.facebook.com/betahouses1" class="fa fa-facebook" aria-label="Follow comany on Facebook"></a>
-            <a href="https://twitter.com/betashouse_?lang=en" class="fa fa-twitter" aria-label="Follow comany on Twitter"></a>
-            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D%252B251911222705%26fbclid%3DIwAR2Cg1Zo5EWKsB7O5SidueR71k4XoSA-fluSRfM2a3IA7URnqIn99NNfTcc&h=AT2T-3DIJ5OJiIDXnNUHeDwtDfpHLHsC_EJSQg3-H8s14o84TINw3sUrjWnlFr59VXunBnDVVIVTfmgecN1CsWCKLY3pbHBjQ3ajvjGpJsF8cOMIwf2ZoQ_yJUSz7w" aria-label="Follow comany on Whatsapp" class="fa fa-whatsapp"></a>
-            <a href="https://t.me/betahouses" class="fa fa-telegram" aria-label="Follow comany on Telegram"></a>
-            <a href="https://www.facebook.com/betahouses1"  ><img aria-label="Follow comany on Tiktok" src="media/tiktok.jpg" alt="tiktok icon" style="height: 20px; width: 20px;"> </a>
-        </div>
+        <p class="copyright"> &#169 2010 - 2023 BETA all rights preserved <p>
     </footer>
 </div>  
+<script src="script.js"></script>
+<script src="description.js"></script>
 </body>
 </html>
