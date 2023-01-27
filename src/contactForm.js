@@ -21,8 +21,7 @@ function formValidation(e) {
                     error=true;
                 }
                 else {
-                    let text=el.nextElementSibling;
-                    text.innerHTML='';
+                   return ;
                 }
             }
             if (temp === "email") {
@@ -33,8 +32,7 @@ function formValidation(e) {
                 error = true;
                 }
                 else {
-                    let text=el.nextElementSibling;
-                    text.innerHTML='';
+                    return ;
                 }
             }
             if (temp==="phone_number") {
@@ -45,8 +43,8 @@ function formValidation(e) {
                     error = true;
                 }
                 else {
-                    let text=el.nextElementSibling;
-                    text.innerHTML='';
+                   
+                    return ;
                 }
             }
             if(el.value.length===0 && required.includes(temp)){
@@ -63,8 +61,8 @@ function formValidation(e) {
         succss.textContent="Your message has been sent successfully!";
         succss.style.width="50%";
         succss.style.height="20%";
-        succss.style.backgroundColor="green";
-        succss.style.color="white";
+        succss.style.backgroundColor="";
+        succss.style.color="green";
         succss.style.fontSize = "large";
         succss.style.textAlign ="center";
         succss.style.padding = "5% 5%"

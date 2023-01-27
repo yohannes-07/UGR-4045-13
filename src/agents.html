@@ -4,168 +4,254 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="buy.css">
-        <link rel="stylesheet" href="responsive1.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
         <title>Beta House </title>
     </head>
     <body>
-        
-            <header class="header" >
-                <div class="header__top">
-                    <div class="header-logo" >
-                        <a href="index.html"> <img src="images/beta.png" class="header-logo__img" alt="beta house logo" width="200" height="100"> </a>
-                    </div>
-                    <nav class="header__navbar" role="navigation" aria-label="Primary menu">
-                       
-                        <button class="btn btn--responsive">
-                            <img class="btn--close btn__img" src="images/close.png" alt="close button"></button>
-                        
-                        <ul class="navbar-list">
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="index.html" >HOME</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="buy.html" >BUY</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="rent.html">RENT</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="#" aria-current="page">AGENTS</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="about.html">ABOUT US</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="contact.html">CONTACT</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="login.html">LOGIN/REGISTER</a></li>
-                        </ul>
-                    </nav>
-                    <button class="btn  btn--responsive" aria-expanded="false">
-                        <img class="btn--bar"  src="images/hamburger.png" alt="hamburger button">
-                    </button>
-                </div>
-            </header>
-    <main>
-        <section class="section">
-            <h2 class="section__title">Feature real estate agents</h2>
-            <p class="section__para">Top sellers and featured real estate agents</p>
-            <div class="section__agents" >
-                <div class="agent">
-                    <img class="agent__img" src="images/bewilu.jpg"  alt="featured real estate agent photo" >
-                    <h2>Bewilu Tagele</h2>
-                    <details class="agent__details">
-                        <summary>Contact Bewilu</summary>
-                        
-                        <span>Experienced and expert real estate agent in Addis Ababa, Ethiopia.</span>
-                        <h4>bewilutagele@gmail.com</h4>
-                        <span>2519*******</span>
-                    </details>
-                    <audio class="agent__audio" controls>
-                        <source src="audios/bewilu.mp3" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                      </audio>
-                </div>
 
-                <div class="agent">
-                    <img  class="agent__img" src="images/abebe.jpg"  alt="featured real estate agent photo">
-                    <h2>Abebe Bitew</h2>
-                    <details class="agent__details">
-                        <summary>Contact Abebe</summary>
-                        <span>Experienced and expert real estate agent in Addis Ababa, Ethiopia.</span>
-                        <h4>abebebitew@gmail.com</h4>
-                        <span>2519*******</span>
-                    </details>
-                    <audio class="agent__audio" controls>
-                        <source src="audios/abebe.mp3" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                      </audio>
-                </div>
-                <div class="agent__img">
-                    <img  class="agent__img" src="images/abdissa.jpg" alt="featured real estate agent photo">
-                    <h2>Abdissa Teka</h2>
-                    <details class="agent__details">
-                        <summary>Contact Abdissa</summary>
-                        <span>Experienced and expert real estate agent in Addis Ababa, Ethiopia.</span>
-                        <h4>abdissateka@gmail.com</h4>
-                        <span>251920520751span>
-                    </details>
-                    <audio class="agent__audio" controls>
-                        <source src="audios/abdissa.mp3" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                      </audio>
-                </div>
-            </div>
-            
-            <h1 class="full-agents-list">Full real estate agents list</h1>
-            <table class="agents">
-                <thead>
-                    <tr class="agents__row">
-                    <th class="agents__heading" scope="col" id="full-name">Full name</th>
-                    <th class="agents__heading" scope="col" id="agent-email">Email</th>
-                    <th class="agents__heading" scope="col" id="agent-phone-number">Phone number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="agents__row">
-                    <td class="agents__data" headers="full-name">Bewilu Tagele</td>
-                    <td class="agents__data" headers="agent-email">bewilutagele@yahoo.com</td>
-                    <td class="agents__data" headers="agent-phone-number">259120520451</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr class="agents__row">
-                    <td class="agents__data" headers="full-name">Degu Arega</td>
-                    <td class="agents__data" headers="agent-email">bewilutagele@yahoo.com</td>
-                    <td class="agents__data" headers="agent-phone-number">259120520451</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr class="agents__row">
-                    <td class="agents__data" headers="full-name">Etsub Abera</td>
-                    <td class="agents__data" headers="agent-email">bewilutagele@yahoo.com</td>
-                    <td class="agents__data" headers="agent-phone-number">259120520451</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr class="agents__row">
-                    <td class="agents__data" headers="full-name">Yared anley</td>
-                    <td class="agents__data" headers="agent-email">bewilutagele@yahoo.com</td>
-                    <td class="agents__data" headers="agent-phone-number">259120520451</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr class="agents__row">
-                    <td class="agents__data" headers="full-name">Etsub Abera</td>
-                    <td class="agents__data" headers="agent-email">bewilutagele@yahoo.com</td>
-                    <td class="agents__data" headers="agent-phone-number">259120520451</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <nav class="footer__navbar" role="navigation" aria-label="Secondary menu">
-            <ul class="navbar-list1">
-                <li class="navbar-list1__item"> <a class="navbar-list1__anchor" href="about.html">About us</a> </li>
-                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="agents.html">Agents</a></li>
-                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="contact.html">Contact us</a></li>
-                <li class="navbar-list1__item"> <div class="footer-logo" > <a class="navbar-list1__anchor" href="index.html"> <img  src="images/beta.png" class="footer-logo__img" alt="beta house logo" width="100" height="70"> </a></div></li>
-                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="buy.html">Buy</a></li>
-                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="rent.html">Rent</a></li>
-                <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="contact.html">Feedback</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <div class="footer__address">
-            <div class="address">
-                <h1 class="address__title">Head office</h1>
-                <h2 class="address__title2">Bole Ruwanda Embassy <br> Addis Ababa</h2>
+           <header>
+            <header>
+              <nav class="navbar navbar-expand-lg py-3 navbar-dark text-decoration-none bg-primary shadow-sm">
+                  <div class="container">
+                    <a href="#" class="navbar-brand">
+             
+                      <img src="images/beta.png" width="100" style="border-radius:30%;"  alt="logo" class="d-inline-block align-middle mr-2">
                 
-                <h3 class="address__contact">251920520751</h3>
-               <h3 class="address__contact"> 251920520751 </h3>
-            </div>
-            <div class="social-media">
-                <a class="social-media__anchor" href="https://www.facebook.com/betahouses1" aria-label="Follow comany on Facebook"><img class="social-media__icon" src="images/facebook.png" alt="facebook icon"></a>
-                <a class="social-media__anchor" href="https://twitter.com/betashouse_?lang=en" aria-label="Follow comany on Twitter"><img class="social-media__icon" src="images/twitter.png" alt="twitter icon"></a>
-                <a class="social-media__anchor" href="https://t.me/betahouses" aria-label="Follow comany on Whatsapp"><img class="social-media__icon" src="images/whatsapp.png" alt="whatsapp icon"></a>
-                <a class="social-media__anchor" href="https://t.me/betahouses"  aria-label="Follow comany on Telegram"><img class="social-media__icon" src="images/telegram.png" alt="telegram icon"></a>
-                <a class="social-media__anchor" href="https://t.me/betahouses" aria-label="Follow comany on Instagram"><img class="social-media__icon" src="images/instagram.png" alt="instagram icon"></a>
-             </div>
+                      <span class="text-uppercase font-weight-bold"></span>
+                    </a>
+                 
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-dark"><span class="navbar-toggler-icon"></span></button>
+    
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ps-5 ms-4 d-flex gap-4 ">
+            <li class="nav-item active"><a href="index.html" class="nav-link text-white lead fs-4">HOME </a></li>
+            <li class="nav-item"><a href="buy.html" class="nav-link lead text-white  fs-4">BUY</a></li>
+            <li class="nav-item"><a href="rent.html" class="nav-link lead text-white fs-4">RENT</a></li>
+            <li class="nav-item"><a href="#" class="nav-link lead text-white fs-4">AGENTS</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link lead text-white fs-4">ABOUT</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link lead text-white fs-4">CONTACT</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link lead text-white fs-4">LOGIN/REGISTER</a></li>
+            
+          </ul>
         </div>
-        <p class="copyright"> &#169 2010 - 2023 BETA all rights preserved <p>
-    </footer>
-    <script src="script.js"></script>
-    </body>
-</html>
+      </div>
+    </nav>
+            </header>
+            <main>
+
+                <section class="my-4 mb-5">
+                    <h2 class="text-center">Featured real estate agents</h2>
+                    <p class="text-center">Top sellers and featured real estate agents</p>
+                    <div class="  row row-cols-1 me-4 ms-4  mb-5  row-cols-lg-3 g-2 g-lg-3">
+                      <div class="col">
+                        <div class="m-5 p-2   px-lg-1 py-lg-1 bg-secondary shadow-lg rounded  ">
+                          <img src="images/bewilu.jpg"  class=" w-100 h-100 rounded "
+                          alt="Skyscrapers" />
+                        </div>
+                        <div  class="d-flex flex-column align-items-center">
+                            <h2>Bewilu Tagele</h2>
+                            <details class="">
+                                <summary>Contact Bewilu</summary>
+                                
+                                <span>Experienced and expert real estate agent in Addis Ababa, Ethiopia.</span>
+                                <h4>bewilutagele@gmail.com</h4>
+                                <span>2519*******</span>
+                            </details>
+                            <audio class="" controls>
+                                <source src="audios/bewilu.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                              </audio>
+                      </div>
+                      </div>
+
+                     <div class="col">
+                        <div class="m-5 p-2   px-lg-1 py-lg-1 bg-secondary shadow-lg rounded  ">
+                          <img src="images/abebe.jpg"  class=" w-100 h-100 rounded "
+                          alt="Skyscrapers" />
+                        </div>
+                        <div  class="d-flex flex-column align-items-center">
+                            <h2>Abebe Shimeles</h2>
+                            <details class="">
+                                <summary>Contact Abebe</summary>
+                                
+                                <span>Experienced and expert real estate agent in Addis Ababa, Ethiopia.</span>
+                                <h4>abebeshime5@gmail.com</h4>
+                                <span>2519*******</span>
+                            </details>
+                            <audio class="" controls>
+                                <source src="audios/abebe.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                              </audio>
+                      </div>
+                      </div>
+                    
+                  
+                    
+                      <div class="col">
+                        <div class="m-5 p-2   px-lg-1 py-lg-1 bg-secondary shadow-lg rounded  ">
+                          <img src="images/abdissa.jpg"  class=" w-100 h-100 rounded "
+                          alt="Skyscrapers" />
+                        </div>
+                        <div  class="d-flex flex-column align-items-center">
+                            <h2>Abdissa Teka</h2>
+                            <details class="">
+                                <summary>Contact Abdissa</summary>
+                                
+                                <span>Experienced and expert real estate agent in Addis Ababa, Ethiopia.</span>
+                                <h4>abddisssateka@gmail.com</h4>
+                                <span>2519*******</span>
+                            </details>
+                            <audio class="" controls>
+                                <source src="audios/abdissa.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                              </audio>
+                      </div>
+                      </div>
+
+                 </div>    
+            </section>
+
+            <section>
+                <h1 class="my-5 text-center">
+                    Full real estate agents list
+                </h1>
+
+                <table  class=" py-3 table ">
+                    <thead class=" text-white thead bg-primary">
+                      <tr >
+                        <th class=""  scope="col">Full name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone number</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="">Bewilu Tagele</td>
+                        <td >bewilutagele@yahoo.com</td>
+                        <td >259120520451</td>
+                      </tr>
+                      <tr>
+                        
+                        <td class="">Abebe Shimeles</td>
+                        <td>abebeshime5@gmail.com</td>
+                        <td>259120520451</td>
+                      </tr>
+                      <tr>
+
+                        <td class="">Abdissa Teka</td>
+                        <td>abddisssateka@gamil.com</td>
+                        <td>259120520751</td>
+                      </tr>
+                      <tr>
+                        
+                        <td class="">Natineal Geremew</td>
+                        <td>abebeshime5@gmail.com</td>
+                        <td>259120520451</td>
+                      </tr>
+                      <tr>
+
+                        <td >Desalgegn Gashaw</td>
+                        <td>abddisssateka@gamil.com</td>
+                        <td>259120520751</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+            </section>
+
+            </main>
+            <section>
+
+                <footer class="my-5 bg-dark text-center text-white">
+                    <!-- Grid container -->
+                    <div>
+                        <nav class="navbar navbar-expand-lg text-white">
+                            <!-- Container wrapper -->
+                            <div class="container-fluid">
+                             
+                             
+                             
+                              <div
+                                class=" navbar-collapse justify-content-center"
+                                id="navbarCenteredExample"  >
+                                <!-- Left links -->
+                                <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                                  <li class="nav-item">
+                                    <a class="nav-link active text-white lead" aria-current="page" href="#">About us</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-white lead" href="agents.html">Agents</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active text-white lead" aria-current="page" href="contact.html">Contact us</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-white lead" href="index.html"> <img src="images/beta.png" width="100" style="border-radius:40%;"  alt="logo" class="d-inline-block align-middle mr-2"></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active text-white lead" aria-current="page" href="buy.html">Buy</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-white lead" href="rent.html">Rent</a>
+                                  </li><li class="nav-item">
+                                    <a class="nav-link active text-white lead" aria-current="page" href="contact.html">Feedback</a>
+                                  </li>
+                                 
+                              </div>
+                            </div>     
+                          </nav>
+                    </div>
+                    <hr>
+                    <div class="container p-4 pb-0">
+                      <!-- Section: Social media -->
+                      <section class="mb-4">
+                     
+                        <a class="btn  btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                          ><img src="images/facebook.png" width="50"  alt="logo" class="d-inline-block align-middle mr-2"></a>
+                  
+                        <a class="btn  btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                          ><img src="images/twitter.png" width="50"  alt="logo" class="d-inline-block align-middle mr-2">
+                        </a>
+                 
+                        <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                          ><img src="images/whatsapp.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                        </a>
+                  
+                   
+                        <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                          ><img src="images/telegram.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                        </a>
+                  
+                      
+                        <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                          ><img src="images/instagram.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                        </a>
+                  
+                       
+                      </section>
+                      <!-- Section: Social media -->
+                    </div>
+                    <!-- Grid container -->
+                  
+                    <!-- Copyright -->
+                    <div class="text-center p-2 bg-dark" >
+                        <p class="pt-3 text-white text-center"> &#169 2010 - 2023 BETA all rights preserved </p>
+                    </div>
+                   
+                  </footer>
+      
+              </section>
+      <script src="script.js"></script>
+      <script src="bootstrap.js"></script>
+      </body>
+      </html>
+      
+      
+      
+      
+      
+      
+      

@@ -1,7 +1,7 @@
 const  houseDetail = [
     { id: "1",
-      name: "Luxurious",
-      img1 : "images/Luxury-Home-Sunshine-Construction.jpg",
+      name: "commercial site",
+      img1 : "images/commercialsite.jpg",
       img2 : "images/interior1.jpg",
       img3: "images/interior2.jpg",
       video1 : "videos/modern.mp4",
@@ -11,8 +11,8 @@ const  houseDetail = [
       bathroom : " 5 bathrooms"
     },
     { id: "2",
-    name: "forest",
-    img1 : "images/forest.jpg",
+    name: "Black mansion",
+    img1 : "images/Black-Mansion.jpg",
     img2 : "images/interior3.jpg",
     img3: "images/interior4.jpg",
     video1 : "videos/modern.mp4",
@@ -91,10 +91,8 @@ function getID(){
   
     const img1=document.getElementById("img1");
     const img2=document.getElementById("img2");
-    const img3=document.getElementById("img3");
+    const img3=document.getElementById("img4");
     const video1=document.getElementById("video1");
-    const video2=document.getElementById("video2");
-
    
     name.innerHTML=houseDeta.name;
     img1.src = houseDeta.img1;
@@ -102,7 +100,7 @@ function getID(){
     img2.src = houseDeta.img2;
     img3.src = houseDeta.img3;
     video1.src = houseDeta.video1;
-    video2.src = houseDeta.video2;
+    
 
 }
 
@@ -170,10 +168,10 @@ function formValidation(e) {
         section.appendChild(succss);
         succss.textContent="Your message has been sent successfully!";
         succss.style.width="50%";
-        succss.style.height="20%";
+        succss.style.height="10%";
         succss.style.marginTop = "3%";
-        succss.style.backgroundColor="green";
-        succss.style.color="white";
+        succss.style.backgroundColor="";
+        succss.style.color="green";
         succss.style.fontSize = "large";
         succss.style.textAlign ="center";
         succss.style.padding = "5% 5%"

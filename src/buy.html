@@ -4,334 +4,453 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="buy.css">
-        <link rel="stylesheet" href="responsive1.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
         <title>Beta House </title>
     </head>
     <body>
-        
-            <header class="header" >
-                <div class="header__top">
-                    <div class="header-logo" >
-                        <a href="index.html"> <img src="images/beta.png" class="header-logo__img" alt="beta house logo" width="200" height="100"> </a>
-                    </div>
-                    <nav class="header__navbar" role="navigation" aria-label="Primary menu">
-                       
-                        <button class="btn btn--responsive">
-                            <img class="btn--close btn__img" src="images/close.png" alt="close button"></button>
-                        
-                        <ul class="navbar-list">
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="index.html" >HOME</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="#" aria-current="page">BUY</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="rent.html">RENT</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="agents.html">AGENTS</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="about.html">ABOUT US</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="contact.html">CONTACT</a></li>
-                            <li class="navbar-list__item" ><a class="navbar-list__anchor" href="login.html">LOGIN/REGISTER</a></li>
-                        </ul>
-                    </nav>
-                    <button class="btn  btn--responsive" aria-expanded="false">
-                        <img class="btn--bar"  src="images/hamburger.png" alt="hamburger button">
-                    </button>
-                </div>
-            </header>
-        <main>
-            <section class="properties-section">
-                <h1>Properties for sale</h1>  
-                <div class="properties"> 
-                    <div class="property">
-                        <a class="property__link" href="description.html?id=4"> <img class="property__img" src="images/main-guest-house.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                 
-                    <div class="property">
-                        <a class="property__link" href="description.html?id=1"> <img class="property__img" src="images/Luxury-Home-Sunshine-Construction.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                    <div class="property">
-                        <a class="property__link" href="description.html?id=5"> <img class="property__img" src="images/commerceaddis.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                    <div class="property" >
-                        <a class="property__link" href="description.html?id=4"> <img class="property__img" src="images/main-guest-house.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="properties"> 
-                    <div class="property">
-                        <a class="property__link" href="description.html?id=4"> <img class="property__img" src="images/main-guest-house.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
+      <header  class="position-relative header navbar-primary ">
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark text-decoration-none bg-primary shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand">
+     
+              <img src="images/beta.png" width="100" style="border-radius:30%;"  alt="logo" class="d-inline-block align-middle mr-2">
+        
+              <span class="text-uppercase font-weight-bold"></span>
+            </a>
+         
+<button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-dark"><span class="navbar-toggler-icon"></span></button>
+
+<div id="navbarSupportedContent" class="collapse navbar-collapse">
+  <ul class="navbar-nav ps-5 ms-4 d-flex gap-4 ">
+    <li class="nav-item active"><a href="index.html" class="nav-link text-white lead fs-4">HOME </a></li>
+    <li class="nav-item"><a href="#" class="nav-link lead text-white  fs-4">BUY</a></li>
+    <li class="nav-item"><a href="rent.html" class="nav-link lead text-white fs-4">RENT</a></li>
+    <li class="nav-item"><a href="agents.html" class="nav-link lead text-white fs-4">AGENTS</a></li>
+    <li class="nav-item"><a href="about.html" class="nav-link lead text-white fs-4">ABOUT</a></li>
+    <li class="nav-item"><a href="contact.html" class="nav-link lead text-white fs-4">CONTACT</a></li>
+    <li class="nav-item"><a href="login.html" class="nav-link lead text-white fs-4">LOGIN/REGISTER</a></li>
+    
+  </ul>
+</div>
+</div>
+</nav>
+    </header>
+            <main>
+              
+              <section>
+                      <h1 class="text-center my-3">Properties for sale</h1>
+                      <div class="  row row-cols-1 me-4 ms-4 row-cols-md-2  row-cols-lg-4 g-2 g-lg-3">
+                        <div class="col">
+                          <a href="description.html?id=4"><div class="pt-3 border bg-light">
+                            <img src="images/main-guest-house.jpg"  class=" w-100 h-100  shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+
+                          <div  class="d-flex flex-column align-items-center">
                             <h3>Guest House</h3>
                             <p> Birr 14,000,000</p>
                             <details>
                                 <summary></summary>
                                 <span>3000sq ft</span>
-                                <span>20 rooms</span>
+                                <span>5 rooms</span>
                                 <span>2 saunas</span>
                             </details>
                         </div>
-                    </div>
-                 
-                    <div class="property">
-                        <a class="property__link" href="description.html?id=1"> <img class="property__img" src="images/Luxury-Home-Sunshine-Construction.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
+                        </div>
+                        <div class="col">
+                         <a href="description.html?id=2"> <div class="pt-3 border bg-light">
+                            <img src="images/Black-Mansion.jpg" class=" w-100 h-100  shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Black manshion</h3>
+                            <p> Birr 50,000,000</p>
+                            <details>
+                                <summary></summary>
+                                <span>4000sq ft</span>
+                                <span>50rooms</span>
+                                <span>10 saunas</span>
+                            </details>
+                        </div>
+                        </div>
+                        <div class="col">
+                          <div class="pt-3 border bg-light">
+                            <a href="description.html?id=1"><img src="images/commercialsite.jpg?id=1"  class=" w-100 h-100 shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Commercial center</h3>
+                            <p> Birr 66,000,000</p>
                             <details>
                                 <summary></summary>
                                 <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
+                                <span>500 rooms</span>
+                                <span>basement + carparcking</span>
                             </details>
                         </div>
-                    </div>
-                    <div class="property">
-                        <a class="property__link" href="description.html?id=5"> <img class="property__img" src="images/commerceaddis.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
+                        </div>
+                        <div class="col">
+                          <a href="description.html?id=5"><div class="pt-3 border bg-light">
+                            <img src="images/commercial.jpg?id=5"  class=" w-100 h-100  shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Commercial center</h3>
+                            <p> Birr 70,000,000</p>
                             <details>
                                 <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
+                                <span>2000sq ft</span>
+                                <span>400 rooms</span>
+                                <span>2 basement</span>
                             </details>
                         </div>
-                    </div>
-                    <div class="property" >
-                        <a class="property__link" href="description.html?id=4"> <img class="property__img" src="images/main-guest-house.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
                         </div>
-                    </div>
-                </div>
-                <div class="properties more-container"> 
-                    <div class="property more">
-                        <a class="property__link" href="description.html?id=4"> <img class="property__img" src="images/main-guest-house.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                 
-                    <div class="property more" >
-                        <a class="property__link" href="description.html?id=1"> <img class="property__img" src="images/Luxury-Home-Sunshine-Construction.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                    <div class="property more">
-                        <a class="property__link" href="description.html?id=5"> <img class="property__img" src="images/commerceaddis.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                    <div class="property more" >
-                        <a class="property__link" href="description.html?id=4"> <img class="property__img" src="images/main-guest-house.jpg" alt="featured  black home" >  </a>
-                        <div class="property-text">
-                            <h3>Guest House</h3>
-                            <p> Birr 14,000,000</p>
-                            <details>
-                                <summary></summary>
-                                <span>3000sq ft</span>
-                                <span>20 rooms</span>
-                                <span>2 saunas</span>
-                            </details>
-                        </div>
-                    </div>
-                </div>
+                      </div>      
+              </section>
               
 
-                <button class="btn--see-more" id="see-more"> <a href="#">See more</a></button>
-            </section>
+              <section>
+              
+                <div class="  row row-cols-1 me-4 ms-4 row-cols-md-2  row-cols-lg-4 g-2 g-lg-3">
+                  <div class="col">
+                    <a href="description.html?id=4"><div class="pt-3 border bg-light">
+                      <img src="images/main-guest-house.jpg"  class=" w-100 h-100  shadow-lg rounded-6 "
+                      alt="Skyscrapers" />
+                    </div></a>
 
+                    <div  class="d-flex flex-column align-items-center">
+                      <h3>Guest House</h3>
+                      <p> Birr 14,000,000</p>
+                      <details>
+                          <summary></summary>
+                          <span>3000sq ft</span>
+                          <span>5 rooms</span>
+                          <span>2 saunas</span>
+                      </details>
+                  </div>
+                  </div>
+                  <div class="col">
+                   <a href="description.html?id=2"> <div class="pt-3 border bg-light">
+                      <img src="images/Black-Mansion.jpg" class=" w-100 h-100  shadow-lg rounded-6 "
+                      alt="Skyscrapers" />
+                    </div></a>
 
-            <section class="videos-section">
-                <h1>Featured homes</h1>
-                <div class="videos">
-                    <div class="video-container">
-                        <video class="video-container__video" controls preload="metadata">
-                            <source src="videos/modern.mp4" type="video/mp4" >
-                            <track
-                              label="English"
-                              kind="subtitles"
-                              srclang="en"
-                              src="videos/modern.vtt"
-                              default />
-                        </video>
-                        <h3>Very large compound</h3>
-                        <p> Birr 20,000,000</p>
-                        <details>
-                            <summary></summary>
-                            <span>3000sq ft</span>
-                            <span>4 services</span>
-                            <span>backyard</span>
-                        </details>
-                    </div>
-                   
-                    
-                    <div class="video-container">
-                        <video class="video-container__video" controls preload="metadata">
-                            <source src="videos/apartment.mp4" type="video/mp4" >
-                            <track
-                              label="English"
-                              kind="subtitles"
-                              srclang="en"
-                              src="videos/apartment.vtt"
-                              default />
-                        </video>
-                        <h3>Very large compound</h3>
-                        <p> Birr 20,000,000</p>
-                        <details>
-                            <summary></summary>
-                            <span>3000sq ft</span>
-                            <span>4 services</span>
-                            <span>backyard</span>
-                        </details>
-                    </div>
-                   
-                    
-                  
-                    <div class="video-container">
-                        <video class="video-container__video" controls preload="metadata">
-                            <source src="videos/modern.mp4" type="video/mp4" >
-                            <track
-                              label="English"
-                              kind="subtitles"
-                              srclang="en"
-                              src="videos/modern.vtt"
-                              default />
-                        </video>
-                        <h3>Very large compound</h3>
-                        <p> Birr 20,000,000</p>
-                        <details>
-                            <summary></summary>
-                            <span>3000sq ft</span>
-                            <span>4 services</span>
-                            <span>backyard</span>
-                        </details>
-                    </div>
-                   
-                    <div class="video-container">
-                        <video class="video-container__video" controls preload="metadata">
-                            <source src="videos/gibi.mp4" type="video/mp4" >
-                            <track
-                              label="English"
-                              kind="subtitles"
-                              srclang="en"
-                              src="videos/gibi.vtt"
-                              default />
-                        </video>
-                        <h3>Very large compound</h3>
-                        <p> Birr 20,000,000</p>
-                        <details>
-                            <summary></summary>
-                            <span>3000sq ft</span>
-                            <span>4 services</span>
-                            <span>backyard</span>
-                        </details>
-                    </div>
-                   
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <nav class="footer__navbar" role="navigation" aria-label="Secondary menu">
-                <ul class="navbar-list1">
-                    <li class="navbar-list1__item"> <a class="navbar-list1__anchor" href="about.html">About us</a> </li>
-                    <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="agents.html">Agents</a></li>
-                    <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="contact.html">Contact us</a></li>
-                    <li class="navbar-list1__item"> <div class="footer-logo" > <a class="navbar-list1__anchor" href="index.html"> <img  src="images/beta.png" class="footer-logo__img" alt="beta house logo" width="100" height="70"> </a></div></li>
-                    <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="buy.html">Buy</a></li>
-                    <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="rent.html">Rent</a></li>
-                    <li class="navbar-list1__item"><a class="navbar-list1__anchor" href="contact.html">Feedback</a></li>
-                </ul>
-            </nav>
-            <hr>
-            <div class="footer__address">
-                <div class="address">
-                    <h1 class="address__title">Head office</h1>
-                    <h2 class="address__title2">Bole Ruwanda Embassy <br> Addis Ababa</h2>
-                    
-                    <h3 class="address__contact">251920520751</h3>
-                   <h3 class="address__contact"> 251920520751 </h3>
-                </div>
-                <div class="social-media">
-                    <a class="social-media__anchor" href="https://www.facebook.com/betahouses1" aria-label="Follow comany on Facebook"><img class="social-media__icon" src="images/facebook.png" alt="facebook icon"></a>
-                    <a class="social-media__anchor" href="https://twitter.com/betashouse_?lang=en" aria-label="Follow comany on Twitter"><img class="social-media__icon" src="images/twitter.png" alt="twitter icon"></a>
-                    <a class="social-media__anchor" href="https://t.me/betahouses" aria-label="Follow comany on Whatsapp"><img class="social-media__icon" src="images/whatsapp.png" alt="whatsapp icon"></a>
-                    <a class="social-media__anchor" href="https://t.me/betahouses"  aria-label="Follow comany on Telegram"><img class="social-media__icon" src="images/telegram.png" alt="telegram icon"></a>
-                    <a class="social-media__anchor" href="https://t.me/betahouses" aria-label="Follow comany on Instagram"><img class="social-media__icon" src="images/instagram.png" alt="instagram icon"></a>
-                 </div>
-            </div>
-            <p class="copyright"> &#169 2010 - 2023 BETA all rights preserved <p>
-        </footer>
-    </div>  
-    <script src="buy.js"></script>
-   
+                    <div  class="d-flex flex-column align-items-center">
+                      <h3>Black manshion</h3>
+                      <p> Birr 50,000,000</p>
+                      <details>
+                          <summary></summary>
+                          <span>4000sq ft</span>
+                          <span>50rooms</span>
+                          <span>10 saunas</span>
+                      </details>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="pt-3 border bg-light">
+                      <a href="description.html?id=1"><img src="images/commercialsite.jpg?id=1"  class=" w-100 h-100 shadow-lg rounded-6 "
+                      alt="Skyscrapers" />
+                    </div></a>
+
+                    <div  class="d-flex flex-column align-items-center">
+                      <h3>Commercial center</h3>
+                      <p> Birr 66,000,000</p>
+                      <details>
+                          <summary></summary>
+                          <span>3000sq ft</span>
+                          <span>500 rooms</span>
+                          <span>basement + carparcking</span>
+                      </details>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <a href="description.html?id=5"><div class="pt-3 border bg-light">
+                      <img src="images/commercial.jpg?id=5"  class=" w-100 h-100  shadow-lg rounded-6 "
+                      alt="Skyscrapers" />
+                    </div></a>
+                    <div  class="d-flex flex-column align-items-center">
+                      <h3>Commercial center</h3>
+                      <p> Birr 70,000,000</p>
+                      <details>
+                          <summary></summary>
+                          <span>2000sq ft</span>
+                          <span>400 rooms</span>
+                          <span>2 basement</span>
+                      </details>
+                  </div>
+                  </div>
+                </div>      
+        </section>
+
+        <section class="position-relative">
+                     
+                      <div class=" more-container row row-cols-1 me-4 ms-4 row-cols-md-2  row-cols-lg-4 g-2 g-lg-3">
+                        <div class="col">
+                          <a href="description.html?id=4"><div class="pt-3 border bg-light">
+                            <img src="images/main-guest-house.jpg"  class=" w-100 h-100  shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Guest House</h3>
+                            <p> Birr 14,000,000</p>
+                            <details>
+                                <summary></summary>
+                                <span>3000sq ft</span>
+                                <span>5 rooms</span>
+                                <span>2 saunas</span>
+                            </details>
+                        </div>
+                        </div>
+                        <div class="col">
+                         <a href="description.html?id=2"> <div class="pt-3 border bg-light">
+                            <img src="images/Black-Mansion.jpg" class=" w-100 h-100  shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Black manshion</h3>
+                            <p> Birr 50,000,000</p>
+                            <details>
+                                <summary></summary>
+                                <span>4000sq ft</span>
+                                <span>50rooms</span>
+                                <span>10 saunas</span>
+                            </details>
+                        </div>
+                        </div>
+                        <div class="col">
+                          <div class="pt-3 border bg-light">
+                            <a href="description.html?id=1"><img src="images/commercialsite.jpg"  class=" w-100 h-100 shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Commercial center</h3>
+                            <p> Birr 66,000,000</p>
+                            <details>
+                                <summary></summary>
+                                <span>3000sq ft</span>
+                                <span>500 rooms</span>
+                                <span>basement + carparcking</span>
+                            </details>
+                        </div>
+                        </div>
+                        <div class="col">
+                          <a href="description.html?id=5"><div class="pt-3 border bg-light">
+                            <img src="images/commercial.jpg"  class=" w-100 h-100  shadow-lg rounded-6 "
+                            alt="Skyscrapers" />
+                          </div></a>
+                          <div  class="d-flex flex-column align-items-center">
+                            <h3>Commercial center</h3>
+                            <p> Birr 70,000,000</p>
+                            <details>
+                                <summary></summary>
+                                <span>2000sq ft</span>
+                                <span>400 rooms</span>
+                                <span>2 basement</span>
+                            </details>
+                        </div>
+                        </div>
+                        
+                          </div> 
+                          <button class="btn--see-more position-absolute top-100 start-50 translate-middle bg-primary text-white fs-4 lead text-center border-0 rounded-1 px-3 my-5 mx-auto " > See more</button>
+                      
+              </section>
+          
+             
+          
+    <section>
+      <div class="  row row-cols-1 me-4 my-5 ms-4 row-cols-md-2  row-cols-lg-4 g-2 g-lg-3">
+        <div class="col">
+          <div class="pt-3 border bg-light">
+            <video class=" w-100 h-100  shadow-lg rounded-6 "controls preload="metadata">
+              <source src="videos/modern.mp4" type="video/mp4" >
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="videos/modern.vtt"
+                default />
+          </video>
+          </div>
+          <div  class="d-flex flex-column align-items-center">
+            <h3>Gues House</h3>
+            <p> Birr 14,000,000</p>
+            <details>
+                <summary></summary>
+                <span>3000sq ft</span>
+                <span>5 rooms</span>
+                <span>2 saunas</span>
+            </details>
+        </div>
+        </div>
+        <div class="col">
+          <div class="pt-3 border bg-light">
+            <video class=" w-100 h-100  shadow-lg rounded-6 "controls preload="metadata">
+              <source src="videos/apartment.mp4" type="video/mp4" >
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="videos/apartment.mp4"
+                default />
+          </video>
+          </div>
+          <div  class="d-flex flex-column align-items-center">
+            <h3>Black manshion</h3>
+            <p> Birr 50,000,000</p>
+            <details>
+                <summary></summary>
+                <span>4000sq ft</span>
+                <span>50rooms</span>
+                <span>10 saunas</span>
+            </details>
+        </div>
+        </div>
+        <div class="col">
+          <div class="pt-3 border bg-light">
+            <video class=" w-100 h-100  shadow-lg rounded-6 "controls preload="metadata">
+              <source src="videos/gibi.mp4" type="video/mp4" >
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="videos/gibi.vtt"
+                default />
+          </video>
+          </div>
+          <div  class="d-flex flex-column align-items-center">
+            <h3>Commercial center</h3>
+            <p> Birr 66,000,000</p>
+            <details>
+                <summary></summary>
+                <span>3000sq ft</span>
+                <span>500 rooms</span>
+                <span>basement + carparcking</span>
+            </details>
+        </div>
+        </div>
+        <div class="col">
+          <div class="pt-3 border bg-light">
+            <video class=" w-100 h-100  shadow-lg rounded-6 "controls preload="metadata">
+              <source src="videos/modern.mp4" type="video/mp4" >
+              <track
+                label="English"
+                kind="subtitles"
+                srclang="en"
+                src="videos/modern.vtt"
+                default />
+          </video>
+          </div>
+          <div  class="d-flex flex-column align-items-center">
+            <h3>Commercial center</h3>
+            <p> Birr 70,000,000</p>
+            <details>
+                <summary></summary>
+                <span>2000sq ft</span>
+                <span>400 rooms</span>
+                <span>2 basement</span>
+            </details>
+        </div>
+        </div>
+      </div>      
+</section>
+
+         </main>
+         <section>
+
+          <footer class="my-3 bg-dark text-center text-white">
+              <!-- Grid container -->
+              <div>
+                  <nav class="navbar navbar-expand-lg text-white">
+                      <!-- Container wrapper -->
+                      <div class="container-fluid">
+                       
+                       
+                       
+                        <div
+                          class=" navbar-collapse justify-content-center"
+                          id="navbarCenteredExample"  >
+                          <!-- Left links -->
+                          <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                            <li class="nav-item">
+                              <a class="nav-link active text-white lead" aria-current="page" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white lead" href="agents.html">Agents</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white lead" aria-current="page" href="contact.html">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white lead" href="index.html"> <img src="images/beta.png" width="100" style="border-radius:40%;"  alt="logo" class="d-inline-block align-middle mr-2"></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white lead" aria-current="page" href="buy.html">Buy</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white lead" href="rent.html">Rent</a>
+                            </li><li class="nav-item">
+                              <a class="nav-link active text-white lead" aria-current="page" href="contact.html">Feedback</a>
+                            </li>
+                           
+                        </div>
+                      </div>     
+                    </nav>
+              </div>
+              <hr>
+              <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+               
+                  <a class="btn  btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                    ><img src="images/facebook.png" width="50"  alt="logo" class="d-inline-block align-middle mr-2"></a>
+            
+                  <a class="btn  btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                    ><img src="images/twitter.png" width="50"  alt="logo" class="d-inline-block align-middle mr-2">
+                  </a>
+           
+                  <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                    ><img src="images/whatsapp.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                  </a>
+            
+             
+                  <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                    ><img src="images/telegram.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                  </a>
+            
+                
+                  <a class="btn btn-floating m-1" href="https://www.facebook.com/betahouses1" role="button"
+                    ><img src="images/instagram.png" width="50"   alt="logo" class="d-inline-block align-middle mr-2">
+                  </a>
+            
+                 
+                </section>
+                <!-- Section: Social media -->
+              </div>
+              <!-- Grid container -->
+            
+              <!-- Copyright -->
+              <div class="text-center p-2 bg-dark" >
+                  <p class="pt-3 text-white text-center"> &#169 2010 - 2023 BETA all rights preserved </p>
+              </div>
+              <!-- Copyright -->
+            </footer>
+
+        </section>
+<script src="script.js"></script>
+<script src="bootstrap.js"></script>
+<script src="seemore.js"></script>
 </body>
 </html>
+
+
+
+
+
+
